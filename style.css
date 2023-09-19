@@ -1,0 +1,34 @@
+.button{
+    border: 1px solid black;
+    border-radius: 10px;
+    /* how to have a consistent size on buttons without need to 
+    hard code a width and height */
+
+}
+
+.button:hover{
+    background-color: blue;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    height:700px
+}
+
+.calculator{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid green;
+
+}
+
+.display{
+    border:1px solid purple;
+    display:flex;
+    justify-content: flex-end;
+}
+
