@@ -1,14 +1,28 @@
-.button{
+button{
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
     /* how to have a consistent size on buttons without need to 
     hard code a width and height */
-
 }
 
-.button:hover{
-    background-color: blue;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
 
+button:hover{
+    filter: brightness(85%);
+}
+
+button:active{
+    filter: brightness(50%);
 }
 
 .container{
@@ -22,7 +36,10 @@
 .calculator{
     display:flex;
     flex-direction: column;
-    border: 1px solid green;
+    border: 10px solid green;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #aaa;
 
 }
 
@@ -30,5 +47,30 @@
     border:1px solid purple;
     display:flex;
     justify-content: flex-end;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:#eee;
 }
+
+.row1{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* i don't want to have the width for these buttons hard-coded */
+
+.clear{
+    width:50px;
+    background-color: #faa;
+}
+
+.delete{
+    width:50px;
+    background-color: #aaf;
+}
+
+
+
+
+
 
