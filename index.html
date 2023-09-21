@@ -10,41 +10,55 @@
     <div class = "container">
         <div class = "calculator">
 
-            <div class = "display"> 0 </div>
-
-            <div class = "row1">
-                <button class = "clear"> Clear </button>
-                <button class = "delete"> Delete</button>
+            <div class = "display"> 
+                <div class = "previousDisplay">1</div>
+                <div class = "currentDisplay">0</div>
             </div>
 
-            <div class = "row2">
-                <button class = "num" value = "7"> 7 </button>
-                <button class = "num" value = "8"> 8 </button>
-                <button class = "num" value = "9"> 9 </button>
-                <button class = "operand" id="divide"> ÷ </button>
-            </div>
+                <div class = "row1">
+                    <button class = "clear"> Clear </button>
+                    <button class = "delete"> Delete </button>
+                </div>
+            <div class = "other-rows">
+                <div class = "row2">
+                    <button class = "num" value = "7"> 7 </button>
+                    <button class = "num" value = "8"> 8 </button>
+                    <button class = "num" value = "9"> 9 </button>
+                    <button class = "operand" id="divide">÷</button>
+                </div>
 
-            <div class = "row3">
-                <button class = "num" value = "4"> 4 </button>
-                <button class = "num" value = "5"> 5 </button>
-                <button class = "num" value = "6"> 6 </button>
-                <button class = "operand" id="multiply"> x </button>
-            </div>
+                <div class = "row3">
+                    <button class = "num" value = "4"> 4 </button>
+                    <button class = "num" value = "5"> 5 </button>
+                    <button class = "num" value = "6"> 6 </button>
+                    <button class = "operand" id="multiply">x</button>
+                </div>
 
-            <div class = "row4">
-                <button class = "num" value = "1"> 1 </button>
-                <button class = "num" value = "2"> 2 </button>
-                <button class = "num" value = "3"> 3 </button>
-                <button class = "operand" id="subtract"> - </button>
-            </div>
+                <div class = "row4">
+                    <button class = "num" value = "1"> 1 </button>
+                    <button class = "num" value = "2"> 2 </button>
+                    <button class = "num" value = "3"> 3 </button>
+                    <button class = "operand" id="subtract">-</button>
+                </div>
 
-            <div class = "row5">
-                <button class = "num" id = "decimal"> . </button>
-                <button class = "num" value = "0"> 0 </button>
-                <button class = "equal"> = </button>
-                <button class = "operand" id = "add"> + </button>
+                <div class = "row5">
+                    <button class = "num" id = "decimal">.</button>
+                    <button class = "num" value = "0">0</button>
+                    <button class = "equal">=</button>
+                    <button class = "operand" id = "add">+</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        Copyright ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        <img class ="gh-logo" src="../Rock-Paper-Scissors/images/githublogo.png" alt="github logo"/>
+        <a href="https://github.com/arthurseverino"> Arthur Severino </a>
+    </footer>
+    
 </body>
 </html>
