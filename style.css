@@ -21,7 +21,6 @@ button{
     margin: 5px;
     width: 30px;
     height: 30px;
-    /* what is vh */
 }
 
 .num, 
@@ -108,10 +107,6 @@ button:active{
     display:flex;
     justify-content: space-between;
 }
-
-
-
-/* i don't want to have the width for these buttons hard-coded */
 
 .clear{
     width:150px;
