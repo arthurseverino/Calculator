@@ -64,7 +64,7 @@ console.log(operandClicked);
 // if I use two different operators, there's a bug 
 // if you just click an operand repeatedly, without pressing anything else it shouldn't be calcuclating 
 // why doesn't my addition work ever 
-// also delete doesn't work
+// also delete doesn't work lol
 
 operands.forEach((operand) => {
     operand.addEventListener('click', () => {
