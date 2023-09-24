@@ -58,11 +58,13 @@ let operator = "";
 let firstOperand = ''
 let operands = document.querySelectorAll('.operand')
 let operandClicked = false;
+console.log(operandClicked);
 
 
 // if I use two different operators, there's a bug 
-// if you just click an operand repeatedly, without pressing anything esle it shouldn't be calcuclating 
+// if you just click an operand repeatedly, without pressing anything else it shouldn't be calcuclating 
 // why doesn't my addition work ever 
+// also delete doesn't work
 
 operands.forEach((operand) => {
     operand.addEventListener('click', () => {
@@ -103,11 +105,11 @@ const subtract = (a,b) => a - b;
 const divide = (a,b) => {
     if(b === 0){
         alert('You cant divide by 0!');
-        return
+        return 0;
     }
     return a / b;
 };
-const multiply = (a,b) => a * b
+const multiply = (a,b) => a * b;
 
 
 function operate(firstOperand,operator,secondOperand){
